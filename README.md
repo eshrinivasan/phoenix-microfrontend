@@ -17,8 +17,22 @@ Access http://localhost:8080/index.html to see the standalone ui5 application
 
 
 ```
-```
+
 ### Step 2
+
+cd openfe-minimal
+
+npm install
+
+npm start
+
+Access http://localhost:8081/index.html to see the standalone fiori elements application
+
+
+```
+
+```
+### Step 3
 
 cd react-core-mf
 
@@ -26,8 +40,7 @@ npm install
 
 npm run start
 
-Access  http://localhost:3000/ to see 2 app links on the side bar
-One react app and One openui5 app
+Access  http://localhost:3000/ to see 3 app links on the side bar
 
 This app is also the base app for the micro front end.
 
