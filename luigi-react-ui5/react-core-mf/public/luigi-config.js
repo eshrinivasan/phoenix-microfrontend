@@ -28,6 +28,12 @@ Luigi.setConfig({
             icon: 'history',
             viewUrl: 'http://localhost:8080/index.html'
           },
+          {
+            viewUrl: 'http://localhost:8081/index.html',
+            pathSegment: 'list-report',
+            loadingIndicator: { enabled: false },
+            label: 'SAP Fiori elements'
+        },
           // {
           //   pathSegment: 'sample1',
           //   label: 'First',
@@ -83,7 +89,7 @@ Luigi.setConfig({
 var defaultLocale = "en-US";
 function myTranslationProvider() {
   var dict = {
-    "en-US": { PRODUCTS: "Products", ORDERHISTORY: "Order History" },
+    "en-US": { PRODUCTS: "Products", ORDERHISTORY: "Order History", SAPFE : 'SAP Fiori elements' },
   };
   return {
     getTranslation: function (label, interpolation, locale) {
