@@ -1,0 +1,15 @@
+{
+  "generator-ui5-app": {
+    "application": "ui5",
+    "namespace": "luigi",
+    "framework": "OpenUI5",
+    "frameworkVersion": "1.112.0",
+    "author": "Shrinivasan Neelamegam",
+    "initrepo": false,
+    "tstypes": "@openui5/ts-types-esm",
+    "tstypesVersion": "1.112.0",
+    "appId": "luigi.ui5",
+    "appURI": "luigi/ui5",
+    "setupCompleted": true
+  }
+}
