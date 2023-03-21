@@ -3,9 +3,9 @@ This repo is created using the tutorial instructions here https://developers.sap
 
 ## Run first the standalone UI5 app and then run the base luigi application which contains a link to a React app also
 
-```
-
 ### Step 1
+
+```
 
 cd ui5-mf
 
@@ -13,12 +13,13 @@ npm install
 
 npm start
 
-Access http://localhost:8080/index.html to see the standalone ui5 application
-
-
 ```
 
+Access http://localhost:8080/index.html to see the standalone ui5 application
+
 ### Step 2
+
+```
 
 cd openfe-minimal
 
@@ -28,13 +29,15 @@ npm run proxy in one window -> to run proxy in 8080
 
 npm start -> to start app in 8081
 
+
+```
+
 Access http://localhost:8081/index.html to see the standalone fiori elements application
 
 
-```
+### Step 3
 
 ```
-### Step 3
 
 cd react-core-mf
 
@@ -42,8 +45,9 @@ npm install
 
 npm run start
 
+
+```
+
 Access  http://localhost:3000/ to see 3 app links on the side bar
 
 This app is also the base app for the micro front end.
-
-```
