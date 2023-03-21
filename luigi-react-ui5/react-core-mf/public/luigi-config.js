@@ -26,7 +26,7 @@ Luigi.setConfig({
             pathSegment: 'order',
             label: 'Order History - UI5 App',
             icon: 'history',
-            viewUrl: 'http://localhost:8080/index.html'
+            viewUrl: 'http://localhost:8086/index.html'
           },
           {
             viewUrl: 'http://localhost:8081/index.html',
@@ -66,7 +66,7 @@ Luigi.setConfig({
   },
   settings: {
     header: {
-      title: 'Luigi Micro Front End with a React app and a UI5 app',
+      title: 'Micro Front End',
       logo: '/logo.svg'
     },
     responsiveNavigation: 'simpleMobileOnly',

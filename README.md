@@ -15,11 +15,12 @@ npm start
 
 ```
 
-Access http://localhost:8080/index.html to see the standalone ui5 application
+Access http://localhost:8086/index.html to see the standalone ui5 application
 
 ### Step 2
 
 ```
+Pre-step: keep "Purchase Order" OData service runnning in 4004 port as it is configured in the manifest.json(repo https://github.wdf.sap.corp/spp/PurchaseOrderCAP)
 
 cd openfe-minimal
 
