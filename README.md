@@ -24,7 +24,9 @@ cd openfe-minimal
 
 npm install
 
-npm start
+npm run proxy in one window -> to run proxy in 8080
+
+npm start -> to start app in 8081
 
 Access http://localhost:8081/index.html to see the standalone fiori elements application
 
