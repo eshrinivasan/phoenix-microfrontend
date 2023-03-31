@@ -1,7 +1,7 @@
 
 This repo is created using the tutorial instructions here https://developers.sap.com/group.luigi-app.html
 
-## Run first the standalone UI5 app and then run the base luigi application which contains a link to a React app also
+## Run first apps in Step 1, 2, 3 and then run the base luigi application
 
 ### Step 1
 
