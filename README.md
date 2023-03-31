@@ -35,8 +35,20 @@ npm start -> to start app in 8081
 
 Access http://localhost:8081/index.html to see the standalone fiori elements application
 
-
 ### Step 3
+
+```
+cd angular-mf
+
+npm install
+
+npm run start
+
+```
+Access http://localhost:4200/index.html to see standalone angular application
+
+
+### Step 4
 
 ```
 
@@ -49,6 +61,6 @@ npm run start
 
 ```
 
-Access  http://localhost:3000/ to see 3 app links on the side bar
 
-This app is also the base app for the micro front end.
+To see Luigi in action, Access  http://localhost:3000/ to see app links on the side bar
+Note: This app is also the base app(in React) for the micro front end.

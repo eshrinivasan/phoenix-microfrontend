@@ -1,11 +1,19 @@
 Luigi.setConfig({
+  routing: {
+    // uses hash-based navigation if set to true
+    useHashRouting: true,
+    nodeParamPrefix: '~',
+    showModalPathInUrl: true,
+    modalPathParam: 'modal',
+    skipRoutingForUrlPatterns: [/access_token=/, /id_token=/]
+  },
   navigation: {
     nodes: () => [
       {
         pathSegment: 'home',
         label: 'Home',
         icon: 'home',
-        viewUrl: '/sampleapp.html/#/microfrontend/home',
+        viewUrl: 'http://localhost:8081/index.html',
         loadingIndicator: {
           enabled: false
         },
@@ -33,7 +41,13 @@ Luigi.setConfig({
             pathSegment: 'list-report',
             loadingIndicator: { enabled: false },
             label: 'SAP Fiori elements'
-        },
+          },
+          {
+            viewUrl: 'http://localhost:4200/index.html',
+            pathSegment: 'ng-list-report',
+            loadingIndicator: { enabled: false },
+            label: '(ANG)SAP Fiori elements'
+          },
           // {
           //   pathSegment: 'sample1',
           //   label: 'First',
@@ -66,8 +80,8 @@ Luigi.setConfig({
   },
   settings: {
     header: {
-      title: 'Micro Front End',
-      logo: '/logo.svg'
+      title: 'Home',
+      logo: 'sap-logo.png'
     },
     responsiveNavigation: 'simpleMobileOnly',
     customTranslationImplementation: myTranslationProvider,

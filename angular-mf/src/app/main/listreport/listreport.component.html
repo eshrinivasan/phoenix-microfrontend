@@ -1,0 +1,118 @@
+<div class='fd-container'>
+    <div class='fd-row'>
+      <div class='fd-col fd-col--12 fd-col-md--6 fd-col-lg--4 fd-col-xl--4'>
+          <div class='docs-layout-grid-bg docs-layout-grid-bg--color-1'><div class="fd-form-item">
+            <label class="fd-form-label" for="input-1">&nbsp;</label>
+            <input class="fd-input" type="text" id="input-1" placeholder="Search">
+        </div></div>
+      </div>
+  
+      <div class='fd-col fd-col--12 fd-col-md--6 fd-col-lg--4 fd-col-xl--4'>
+          <div class='docs-layout-grid-bg docs-layout-grid-bg--color-2'><div>
+            <label class="fd-form-label" id="cozySelectLabel">Editing Status</label><br />
+            <div class="fd-popover">
+                <div class="fd-popover__control" aria-expanded="true" aria-haspopup="true">
+                    <div class="fd-select">
+                        <button
+                            aria-expanded="true"
+                            aria-haspopup="listbox"
+                            aria-labelledby="cozySelectLabel cozySelectValue"
+                            class="fd-select__control"
+                            id="cozySelectCombobox"
+                            onclick="
+                                toggleElAttrs('h0C6A325', ['aria-hidden']);
+                                toggleElAttrs('cozySelectCombobox', ['aria-expanded']);
+                            "
+                            value="All"
+                            tabindex="0">
+                            <span is="cozySelectValue" class="fd-select__text-content">All</span>
+                            <span class="fd-button fd-button--transparent fd-select__button">
+                                <i class="sap-icon--slim-arrow-down"></i>
+                            </span>
+                        </button>
+                    </div>
+                </div>
+                <div
+                    aria-hidden="false"
+                    class="fd-popover__body fd-popover__body--no-arrow fd-popover__body--dropdown"
+                    id="h0C6A325">
+                    <!-- <ul
+                        aria-activedescendant="cozySelectCombobox-currentlyFocusedItem"
+                        aria-labelledby="cozySelectLabel"
+                        class="fd-list fd-list--dropdown"
+                        role="listbox">
+                        <li
+                            id="cozySelectCombobox-currentlyFocusedItem"
+                            class="fd-list__item"
+                            role="option"
+                            tabindex="0">
+                        <span class="fd-list__title">Select</span>
+                        </li>
+                        <li aria-selected="true"
+                            class="fd-list__item is-selected"
+                            role="option"
+                            tabindex="0">
+                        <span class="fd-list__title">List item 1</span>
+                        </li>
+                       
+                    </ul> -->
+                </div>
+            </div>
+        </div>
+        </div>
+      </div>
+  
+      <div class='fd-col fd-col--12 fd-col-md--6 fd-col-lg--4 fd-col-xl--4'>
+          <label class="fd-form-label" for="input-1">&nbsp;</label>
+          <div class='docs-layout-grid-bg docs-layout-grid-bg--color-3'> <button class="fd-button fd-button--emphasized">Go</button> <button class="fd-button fd-button--transparent">Adapt Filters</button></div>
+      </div>
+  
+      <!-- <div class='fd-col fd-col--12 fd-col-md--6 fd-col-lg--4 fd-col-xl--4'>
+          <div class='docs-layout-grid-bg docs-layout-grid-bg--color-4'>(4 cell)</div>
+      </div> -->
+    </div>
+  </div>
+
+
+
+
+<div class="fd-toolbar fd-toolbar--title fd-toolbar-active">
+    <h4 class="fd-title fd-title--h4 fd-toolbar__title">Manage Purchase Orders</h4>
+    <span class="fd-toolbar__spacer fd-toolbar__spacer--auto"></span>
+</div>
+<table class="fd-table fd-table--responsive fd-table--no-horizontal-borders">
+    <thead class="fd-table__header">
+        <tr class="fd-table__row">
+            <th class="fd-table__cell fd-table__cell--checkbox">
+                <input aria-label="checkbox" type="checkbox" class="fd-checkbox" id="kqqzPI">
+                <label class="fd-checkbox__label" for="kqqzPI"></label>
+            </th>
+            <th class="fd-table__cell" scope="col">ORDER NUMBER</th>
+            <th class="fd-table__cell" scope="col">SUPPLIER</th>
+            <th class="fd-table__cell" scope="col">AMOUNT</th>
+            <th class="fd-table__cell" scope="col">CREATED ON</th>
+            <th class="fd-table__cell" scope="col">ORDER STATUS</th>
+            <th class="fd-table__cell"></th>
+        </tr>
+    </thead>
+    <tbody class="fd-table__body">
+        <tr class="fd-table__row fd-table__row--activable fd-table__row--hoverable" *ngFor="let po of pos" [routerLink]="'/podetail/'+po.ID+po.DOCUMENT_NUMBER">
+            <td class="fd-table__cell fd-table__cell--checkbox">
+                <input aria-label="checkbox" type="checkbox" class="fd-checkbox" id="EWuzWh">
+                <label class="fd-checkbox__label" for="EWuzWh"></label>
+            </td>
+            <td class="fd-table__cell">{{po.DOCUMENT_NUMBER}}</td>
+            <td class="fd-table__cell">
+                <span class="fd-object-status">
+                    {{po.TO_ORG_ID}}
+                </span>
+            </td>
+            <td class="fd-table__cell">{{po.AMOUNT | number: '.2'}} {{po.CURRENCY}}</td>
+            <td class="fd-table__cell">{{po.CREATED}}</td>
+            <td class="fd-table__cell">{{po.STATUS}}</td>
+            <td class="fd-table__cell fd-table__cell--fit-content fd-table__cell--no-padding">
+                <i class="fd-table__icon fd-table__icon--navigation sap-icon--slim-arrow-right" role="presentation"></i>
+            </td>
+        </tr>
+    </tbody>
+</table>

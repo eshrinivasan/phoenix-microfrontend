@@ -14,15 +14,16 @@ const Home = (props) => {
   }
 
   return (
-    <Grid position="Center" defaultIndent="XL1 L1 M1 S1" defaultSpan="XL10 L10 M10 S10">
-      <Panel headerText={props.localeDict.WELCOME_LUIGI} headerLevel="H3">
-        <Select onChange={onChangeValue}>
-          {options.map((language) => (
-            <Option key={language.key}>{language.text}</Option>
-          ))}
-        </Select>
-      </Panel>
-    </Grid>
+    <></>
+    // <Grid position="Center" defaultIndent="XL1 L1 M1 S1" defaultSpan="XL10 L10 M10 S10">
+    //   <Panel headerText={props.localeDict.WELCOME_LUIGI} headerLevel="H3">
+    //     <Select onChange={onChangeValue}>
+    //       {options.map((language) => (
+    //         <Option key={language.key}>{language.text}</Option>
+    //       ))}
+    //     </Select>
+    //   </Panel>
+    // </Grid>
   );
 };
 
