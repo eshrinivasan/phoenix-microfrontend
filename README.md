@@ -42,7 +42,7 @@ cd angular-mf
 
 npm install
 
-npm run start
+ng serve
 
 ```
 Access http://localhost:4200/index.html to see standalone angular application
