@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
 import { ActivatedRoute, Params } from '@angular/router';
 
 
@@ -9,6 +9,22 @@ import { ActivatedRoute, Params } from '@angular/router';
 })
 
 export class ObjectpageComponent implements OnInit{
+  // @Input() label: string;
+  // @Input() value: string;
+  loading = true;
+  visible = false;
+
+  onCollapseChange(): void {
+      console.log('collapse changed');
+  }
+
+  openPage(): void {
+      this.visible = true;
+  }
+
+  closePage(): void {
+      this.visible = false;
+  }
 
   constructor(private route: ActivatedRoute) {
 
@@ -25,5 +41,7 @@ export class ObjectpageComponent implements OnInit{
     });
     
   }
+
+  
   
 }

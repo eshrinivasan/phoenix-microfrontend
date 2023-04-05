@@ -73,13 +73,11 @@
     </div>
   </div>
 
-
-
-
 <div class="fd-toolbar fd-toolbar--title fd-toolbar-active">
     <h4 class="fd-title fd-title--h4 fd-toolbar__title">Manage Purchase Orders</h4>
     <span class="fd-toolbar__spacer fd-toolbar__spacer--auto"></span>
 </div>
+
 <table class="fd-table fd-table--responsive fd-table--no-horizontal-borders">
     <thead class="fd-table__header">
         <tr class="fd-table__row">
@@ -96,7 +94,7 @@
         </tr>
     </thead>
     <tbody class="fd-table__body">
-        <tr class="fd-table__row fd-table__row--activable fd-table__row--hoverable" *ngFor="let po of pos" [routerLink]="'/podetail/'+po.ID+po.DOCUMENT_NUMBER">
+        <tr class="fd-table__row fd-table__row--activable fd-table__row--hoverable" *ngFor="let po of orders" [routerLink]="'/podetail/'+po.ID+po.DOCUMENT_NUMBER">
             <td class="fd-table__cell fd-table__cell--checkbox">
                 <input aria-label="checkbox" type="checkbox" class="fd-checkbox" id="EWuzWh">
                 <label class="fd-checkbox__label" for="EWuzWh"></label>
